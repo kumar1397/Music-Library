@@ -35,14 +35,12 @@ const favorite = require("./routes/favorite");
 
 
 // Import and mount routes
-app.use("/auth", auth);
+app.use("/", auth);
 app.use("/users", user);
 app.use("/artists", artist);
 app.use("/albums", album);
 app.use("/tracks", track);
 app.use("/favorites",favorite)
-
-
 
 // Start the Express server
 app.listen(PORT, () => {
